@@ -1,4 +1,4 @@
-define ['Backbone'], ->
+define ['backbone'], ->
 
   TodoView = Backbone.View.extend {
     tagName:  "li"

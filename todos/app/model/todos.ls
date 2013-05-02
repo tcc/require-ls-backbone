@@ -1,4 +1,4 @@
-define ['Backbonels'], (bkl) ->
+define ['backbone.localstorage'], (bkl) ->
 
   Todo = Backbone.Model.extend {
     defaults: -> {

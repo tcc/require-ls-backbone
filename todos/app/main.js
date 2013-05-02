@@ -3,9 +3,9 @@ require({
   	app: '../app',
   	Json2: '../lib/json2',
   	jQuery: '../lib/jquery',
-  	Underscore: '../lib/underscore',
-  	Backbone: '../lib/backbone',
-  	Backbonels: '../lib/backbone-localstorage',
+  	underscore: '../lib/underscore',
+  	backbone: '../lib/backbone-min',
+  	'backbone.localstorage': '../lib/backbone-localstorage-min',
     ls: '../lib/ls',
     livescript: '../lib/livescript',
   },
@@ -13,15 +13,15 @@ require({
     'jQuery': {
       exports: '$'
     },
-    'Underscore': {
+    'underscore': {
       exports: '_'
     },
-    'Backbone': {
-      deps: ['Underscore', 'jQuery'],
-      exports: 'Backbone'
+    'backbone': {
+      deps: ['underscore', 'jQuery'],
+      exports: 'backbone'
     },
-    'Backbonels': {
-      deps: ['Backbone','Json2'],
+    'backbone.localstorage': {
+      deps: ['backbone','Json2'],
     }
   }
 }, ['ls!app/lsmain']);
